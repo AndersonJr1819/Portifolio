@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Ferreira | Front-End Developer</title>
+    <meta name="description"
+        content="Portfólio profissional de Anderson Ferreira, estudante e desenvolvedor Front-End especializado em interfaces web modernas, responsivas e funcionais.">
+    <meta property="og:title" content="Anderson Ferreira | Front-End Developer">
+    <meta property="og:description"
+        content="Desenvolvedor Front-End focado em criar experiências digitais modernas e funcionais.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20' fill='rgb(235,0,30)'>&lt;/&gt;</text></svg>">
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <div class="logo-text">
+                    <span class="logo-name">ANDERSON</span>
+                    <span class="logo-sub">Front-End Developer</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="index.html" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html" class="nav-link">Habilidades</a></li>
+                    <li><a href="index.html" class="nav-link">Projetos</a></li>
+                    <li><a href="index.html" class="nav-link">Jornada</a></li>
+                    <li><a href="index.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="index.html" class="btn-cv">Download CV &darr;</a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting">Olá, eu sou Anderson.</span>
+                    <h1 class="hero-title">Front-End <span class="highlight">Developer</span></h1>
+                    <p class="hero-desc">Desenvolvedor Front-End focado em criar interfaces web modernas, responsivas e
+                        funcionais.</p>
+                    <p class="hero-desc-sub">Transformo ideias em experiências digitais utilizando tecnologias modernas
+                        de desenvolvimento web.</p>
+                    <div class="hero-buttons">
+                        <a href="index.html" class="btn btn-primary">Ver projetos &rarr;</a>
+                        <a href="index.html" class="btn btn-secondary">Entre em contato &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window main-win">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">App.jsx</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="token-kw">import</span> React <span class="token-kw">from</span> <span class="token-str">'react'</span>;
+
+<span class="token-kw">function</span> <span class="token-func">App</span>() {
+  <span class="token-kw">return</span> (
+    &lt;<span class="token-tag">div</span> <span class="token-attr">className</span>=<span class="token-str">"app"</span>&gt;
+      &lt;<span class="token-tag">h1</span>&gt;Olá, eu sou Anderson&lt;/<span class="token-tag">h1</span>&gt;
+      &lt;<span class="token-tag">p</span>&gt;Front-End Developer&lt;/<span class="token-tag">p</span>&gt;
+    &lt;/<span class="token-tag">div</span>&gt;
+  );
+}
+
+<span class="token-kw">export default</span> App;</code></pre>
+                        </div>
+                    </div>
+                    <div class="tech-floating-badges">
+                        <div class="badge-item red-badge">&lt;/&gt;</div>
+                        <div class="badge-item icon-react">⚛</div>
+                        <div class="badge-item icon-git">⑂</div>
+                        <div class="badge-item icon-terminal">&gt;_</div>
+                    </div>
+                    <div class="code-window terminal-win">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">terminal</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="term-prompt">$</span> npm start
+&gt; vite dev
+&gt; Local: http://localhost:5173</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="about-grid">
+                    <div class="about-text-col">
+                        <p class="about-p">Sou estudante e desenvolvedor Front-End, focado na criação de interfaces web
+                            modernas, responsivas e funcionais.</p>
+                        <p class="about-p">Desenvolvo projetos próprios para colocar meus conhecimentos em prática e
+                            continuar evoluindo na área de tecnologia.</p>
+                        <p class="about-p">Meu objetivo é continuar aprimorando minhas habilidades em desenvolvimento
+                            web e futuramente atuar como desenvolvedor Full Stack.</p>
+                    </div>
+                    <div class="about-cards-col">
+                        <div class="about-card">
+                            <div class="card-icon">&lt;/&gt;</div>
+                            <h3>Front-End Developer</h3>
+                            <p>Criação de interfaces web modernas e responsivas.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">⚛</div>
+                            <h3>React Developer</h3>
+                            <p>Desenvolvimento com componentes e aplicações modernas.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">&#128187;</div>
+                            <h3>Projetos próprios</h3>
+                            <p>Praticando e aplicando lógica e programação.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">⑂</div>
+                            <h3>Git &amp; GitHub</h3>
+                            <p>Versionamento e organização de código.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">&#9881;</div>
+                            <h3>VS Code</h3>
+                            <p>Editor de código leve e poderoso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="habilidades">
+            <div class="container">
+                <h2 class="section-title">Minhas habilidades</h2>
+                <div class="skills-layout">
+                    <div class="skills-cards-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">5</div>
+                            <div class="skill-info">
+                                <h3>HTML5</h3>
+                                <p>Estrutura semântica de páginas web.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">3</div>
+                            <div class="skill-info">
+                                <h3>CSS3</h3>
+                                <p>Estilização moderna e responsiva.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">JS</div>
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <p>Interatividade e lógica no front-end.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛</div>
+                            <div class="skill-info">
+                                <h3>React</h3>
+                                <p>Biblioteca para criar interfaces modernas.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⑂</div>
+                            <div class="skill-info">
+                                <h3>Git</h3>
+                                <p>Controle de versão dos projetos.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">&#9638;</div>
+                            <div class="skill-info">
+                                <h3>GitHub</h3>
+                                <p>Hospedagem e colaboração de código.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">&#9881;</div>
+                            <div class="skill-info">
+                                <h3>VS Code</h3>
+                                <p>Editor de código leve e poderoso.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-knowledge-box">
+                        <h3 class="knowledge-title">Conhecimentos</h3>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>HTML</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>CSS</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>JavaScript</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>React</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>Git</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label"><span>GitHub</span></div>
+                            <div class="bar-track">
+                                <div class="bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-flow">
+                    <span class="flow-item">HTML</span>
+                    <span class="flow-arrow">&rarr;</span>
+                    <span class="flow-item">CSS</span>
+                    <span class="flow-arrow">&rarr;</span>
+                    <span class="flow-item">JavaScript</span>
+                    <span class="flow-arrow">&rarr;</span>
+                    <span class="flow-item">React</span>
+                    <span class="flow-arrow">&rarr;</span>
+                    <span class="flow-item">Git</span>
+                    <span class="flow-arrow">&rarr;</span>
+                    <span class="flow-item">GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projetos">
+            <div class="container">
+                <div class="projects-header-row">
+                    <h2 class="section-title">Projetos em destaque</h2>
+                    <a href="index.html" class="all-projects-link">Ver todos os projetos &rarr;</a>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img-box mock-proj-1">
+                            <div class="mock-overlay">
+                                <span class="mock-title">Filtech</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Filtech</h3>
+                            <p>Projeto desenvolvido com HTML e CSS, focado na criação de uma interface web moderna e
+                                responsiva.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="index.html" class="btn btn-primary">Ver projeto &rarr;</a>
+                                <a href="index.html" class="btn btn-outline">GitHub &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-box mock-proj-2">
+                            <div class="mock-overlay">
+                                <span class="mock-title">Agency Web</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Agency Web</h3>
+                            <p>Projeto de desenvolvimento web com foco em layout, organização visual e experiência do
+                                usuário.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="index.html" class="btn btn-primary">Ver projeto &rarr;</a>
+                                <a href="index.html" class="btn btn-outline">GitHub &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-box mock-proj-3">
+                            <div class="mock-overlay">
+                                <span class="mock-title">E-commerce</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce</h3>
+                            <p>Projeto desenvolvido para praticar interfaces de e-commerce, organização de produtos e
+                                integração com API.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">ViaCEP API</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="index.html" class="btn btn-primary">Ver projeto &rarr;</a>
+                                <a href="index.html" class="btn btn-outline">GitHub &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-box mock-proj-4">
+                            <div class="mock-overlay">
+                                <span class="mock-title">Projeto React</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Projeto React</h3>
+                            <p>Projeto desenvolvido utilizando React para praticar componentes, organização da interface
+                                e desenvolvimento de aplicações modernas.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">GitHub</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="index.html" class="btn btn-primary">Ver projeto &rarr;</a>
+                                <a href="index.html" class="btn btn-outline">GitHub &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey" id="jornada">
+            <div class="container">
+                <h2 class="section-title">Minha jornada</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Estudos</h3>
+                            <p>Início da minha jornada no desenvolvimento web.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Projetos próprios</h3>
+                            <p>Comecei a desenvolver projetos para praticar e aplicar o que aprendi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvimento Front-End</h3>
+                            <p>Foco em criar interfaces modernas e responsivas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>JavaScript</h3>
+                            <p>Aprendizado de lógica de programação e interatividade.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>React</h3>
+                            <p>Exploração de componentes e desenvolvimento moderno.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Git e GitHub</h3>
+                            <p>Versionamento, organização e colaboração de código.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Próximo objetivo: Full Stack</h3>
+                            <p>Continuar minha formação para futuramente atuar como desenvolvedor Full Stack.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <div class="container">
+                <h2 class="section-title">Ferramentas que utilizo</h2>
+                <div class="tools-ide-mock">
+                    <div class="ide-sidebar">
+                        <div class="ide-icon active">&#128193;</div>
+                        <div class="ide-icon">&#128269;</div>
+                        <div class="ide-icon">⑂</div>
+                        <div class="ide-icon">&#9881;</div>
+                    </div>
+                    <div class="ide-filetree">
+                        <div class="filetree-title">EXPLORER</div>
+                        <ul class="filetree-list">
+                            <li>&gt; meu-projeto</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&#128193; public</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&#128193; src</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128196; App.jsx</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128196; index.css</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&#128196; package.json</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&#128196; README.md</li>
+                        </ul>
+                    </div>
+                    <div class="ide-code-area">
+                        <div class="code-area-header">
+                            <span class="tab active">App.jsx</span>
+                            <span class="tab">index.css</span>
+                        </div>
+                        <div class="code-area-body">
+                            <pre><code><span class="token-kw">function</span> <span class="token-func">App</span>() {
+  <span class="token-kw">return</span> (
+    &lt;<span class="token-tag">div</span> <span class="token-attr">className</span>=<span class="token-str">"app"</span>&gt;
+      &lt;<span class="token-tag">h1</span>&gt;Anderson Ferreira&lt;/<span class="token-tag">h1</span>&gt;
+      &lt;<span class="token-tag">p</span>&gt;Front-End Developer&lt;/<span class="token-tag">p</span>&gt;
+    &lt;/<span class="token-tag">div</span>&gt;
+  );
+}
+
+<span class="token-kw">export default</span> App;</code></pre>
+                        </div>
+                        <div class="ide-terminal-bar">
+                            <div class="term-tabs">TERMINAL</div>
+                            <div class="term-text">
+                                $ npm run dev<br>
+                                &gt; meu-projeto@1.0.0 dev<br>
+                                &gt; vite<br>
+                                VITE v5.0.0 ready in 300 ms<br>
+                                &gt; Local: http://localhost:5173/
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="github-section">
+            <div class="container">
+                <div class="github-card-box">
+                    <div class="github-user-header">
+                        <div class="github-avatar"></div>
+                        <div class="github-user-info">
+                            <h3>Anderson Ferreira</h3>
+                            <p>Front-End Developer</p>
+                            <p class="github-desc">Estudante e desenvolvedor Front-End. Praticando componentes,
+                                organização de interface e desenvolvimento de aplicações modernas.</p>
+                        </div>
+                    </div>
+                    <div class="github-links-list">
+                        <a href="index.html" class="github-row">
+                            <span class="gh-row-title">Repositórios</span>
+                            <span class="gh-row-arrow">&rarr;</span>
+                        </a>
+                        <a href="index.html" class="github-row">
+                            <span class="gh-row-title">Projetos</span>
+                            <span class="gh-row-arrow">&rarr;</span>
+                        </a>
+                        <a href="index.html" class="github-row">
+                            <span class="gh-row-title">Tecnologias</span>
+                            <span class="gh-row-arrow">&rarr;</span>
+                        </a>
+                        <a href="index.html" class="github-row">
+                            <span class="gh-row-title">Contribuições</span>
+                            <span class="gh-row-arrow">&rarr;</span>
+                        </a>
+                    </div>
+                    <div class="github-visit-btn-wrap">
+                        <a href="index.html" class="btn btn-primary">Visitar GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2 class="section-title">Vamos trabalhar juntos?</h2>
+                <p class="contact-subtitle">Estou aberto a novas oportunidades, projetos e experiências na área de
+                    desenvolvimento.</p>
+                <div class="contact-grid">
+                    <div class="contact-form-wrap">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                                <span class="error-msg" id="error-nome">Por favor, insira seu nome.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                                <span class="error-msg" id="error-email">Por favor, insira um e-mail válido.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
+                                <span class="error-msg" id="error-assunto">Por favor, insira o assunto.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5"
+                                    placeholder="Sua mensagem..."></textarea>
+                                <span class="error-msg" id="error-mensagem">Por favor, digite sua mensagem.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Enviar mensagem &rarr;</button>
+                            <div class="form-success" id="form-success">Mensagem enviada com sucesso! Em breve entrarei
+                                em contato.</div>
+                        </form>
+                    </div>
+                    <div class="contact-info-wrap">
+                        <h3>Onde me encontrar</h3>
+                        <ul class="social-links-list">
+                            <li>
+                                <a href="index.html" class="social-link-item">
+                                    <span class="social-icon">gh</span>
+                                    <div>
+                                        <strong>GitHub</strong>
+                                        <span>github.com/andersonferreira</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="social-link-item">
+                                    <span class="social-icon">in</span>
+                                    <div>
+                                        <strong>LinkedIn</strong>
+                                        <span>linkedin.com/in/andersonferreira</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="social-link-item">
+                                    <span class="social-icon">@</span>
+                                    <div>
+                                        <strong>E-mail</strong>
+                                        <span>contato@andersonferreira.dev</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-name">ANDERSON</span>
+                    <span class="logo-sub">Front-End Developer</span>
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="index.html" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html" class="nav-link">Habilidades</a></li>
+                    <li><a href="index.html" class="nav-link">Projetos</a></li>
+                    <li><a href="index.html" class="nav-link">Jornada</a></li>
+                    <li><a href="index.html" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="index.html" class="f-social-icon" aria-label="GitHub">gh</a>
+                    <a href="index.html" class="f-social-icon" aria-label="LinkedIn">in</a>
+                    <a href="index.html" class="f-social-icon" aria-label="Email">@</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anderson Ferreira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
