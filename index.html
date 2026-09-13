@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson Ferreira | Desenvolvedor Front-End em Formação</title>
-    <link rel="shortcut icon" href="img/Logo AF.png" type="image/x-icon">
+    <title>Anderson Ferreira | Front-End em formação</title>
+    <link rel="icon" type="image/png" href="img/Logo AF.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles/style.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -13,215 +18,415 @@
 <body>
 
     <header class="header">
-        <div class="header-container">
-            <div class="logo-wrapper">
-                <span class="logo-text">AF</span>
-                <div class="logo-info">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="assets/img/Logo AF.png">AF</a>
+                <div class="logo-text">
                     <span class="logo-name">Anderson Ferreira</span>
-                    <span class="logo-title">Front-End em formação</span>
+                    <span class="logo-subtitle">Front-End em formação</span>
                 </div>
             </div>
             <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="inicio">Início</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="tecnologias">Tecnologias</a></li>
-                    <li><a href="ferramentas">Ferramentas</a></li>
+                <ul>
+                    <li><a href="inicio" class="active">Início</a></li>
                     <li><a href="projetos">Projetos</a></li>
-                    <li><a href="estudos">Estudos</a></li>
-                    <li><a href="github">GitHub</a></li>
+                    <li><a href="sobre">Sobre</a></li>
                     <li><a href="contato">Contato</a></li>
                 </ul>
             </nav>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <i class="fa-regular fa-sun"></i>
+            </button>
         </div>
     </header>
 
     <main class="main">
-
         <section id="inicio" class="hero-section">
-            <div class="hero-container">
+            <div class="container hero-container">
                 <div class="hero-content">
-                    <p class="hero-greeting">Olá, eu sou</p>
-                    <h1 class="hero-name">Anderson Ferreira</h1>
-                    <p class="hero-role">Estudante e futuro Desenvolvedor Front-End</p>
-                    <p class="hero-description">
-                        Atualmente estou concluindo o Ensino Médio Técnico e estudando programação. Meu objetivo é me
-                        tornar Desenvolvedor Front-End. Tenho maior confiança em HTML e CSS, estudo JavaScript e estou
-                        praticando React.
-                    </p>
+                    <div class="hero-intro">
+                        <span>Olá, eu sou</span>
+                        <h1>Anderson Ferreira</h1>
+                        <h2>Estudante e futuro Desenvolvedor Front-End</h2>
+                        <p>Atualmente estou concluindo o Ensino Médio Técnico e estudando programação, com foco em
+                            desenvolvimento web. Meu objetivo é me tornar um desenvolvedor Front-End e, no futuro,
+                            ingressar na faculdade. Estou sempre em busca de novos conhecimentos e oportunidades para
+                            evoluir.</p>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.instagram.com/anderson_junior1617/" target="_blank"
+                            rel="noopener noreferrer" class="social-card">
+                            <i class="fa-brands fa-instagram"></i>
+                            <div>
+                                <span class="social-title">Instagram</span>
+                                <span class="social-user">@anderson_junior1617</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anderson-ferreira-940ab43b9/" target="_blank"
+                            rel="noopener noreferrer" class="social-card">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div>
+                                <span class="social-title">LinkedIn</span>
+                                <span class="social-user">Anderson Ferreira</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/AndersonJr1819" target="_blank" rel="noopener noreferrer"
+                            class="social-card">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <span class="social-title">GitHub</span>
+                                <span class="social-user">AndersonJr1819</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="hero-sidebar">
-                    <figure class="hero-figure">
-                        <img src="img/Minha foto.jpeg" alt="Foto de perfil de Anderson Ferreira" class="hero-image">
-                    </figure>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/img/Minha foto.jpeg" alt="Foto de perfil de Anderson Ferreira">
+                    </div>
+
+                    <div class="github-stats-card">
+                        <div class="stats-header">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Contribuições no GitHub</span>
+                        </div>
+                        <div class="stats-grid-placeholder">
+                            <div class="heatmap-grid"></div>
+                        </div>
+                        <div class="stats-footer">
+                            <div class="stats-info">
+                                <span class="stats-number">183</span>
+                                <span class="stats-label">Total de commits</span>
+                            </div>
+                            <div class="stats-info">
+                                <span class="stats-number">32</span>
+                                <span class="stats-label">Repositórios</span>
+                            </div>
+                            <div class="stats-info">
+                                <span class="stats-number">5</span>
+                                <span class="stats-label">Seguidores</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="sobre" class="about-section">
-            <div class="about-container">
-                <h2 class="section-title">Sobre mim</h2>
-                <p class="about-text">
-                    Sou estudante de programação, concluindo o Ensino Médio Técnico em adiminstrção, foco neste momento é 
-                     atuar como Desenvolvedor Front-End. Utilizo algumas IA para auxiliar no meu
-                    aprendizado e desenvolvimento, e sempre tento entender cada resultado que ela me traz, mas mesmo assim ainda 
-                    faço alguns projetos de forma manual para evitar qualquer dependencia da IA
-                </p>
-            </div>
-        </section>
+        <section class="skills-section">
+            <div class="container">
+                <div class="skills-grid-container">
+                    <div class="skills-group">
+                        <div class="section-subtitle-icon">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Tecnologias</h3>
+                        </div>
+                        <div class="skills-cards">
+                            <div class="skill-card">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-react-original colored"></i>
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span class="skill-status">(em aprendizado)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <section id="tecnologias" class="technologies-section">
-            <div class="technologies-container">
-                <h2 class="section-title">Tecnologias</h2>
-                <ul class="technologies-list">
-                    <li class="technology-item">HTML5</li>
-                    <li class="technology-item">CSS3</li>
-                    <li class="technology-item">JavaScript</li>
-                    <li class="technology-item">React <span class="status-tag">(em aprendizado/prática)</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="ferramentas" class="tools-section">
-            <div class="tools-container">
-                <h2 class="section-title">Ferramentas</h2>
-                <ul class="tools-list">
-                    <li class="tool-item">VS Code</li>
-                    <li class="tool-item">Git</li>
-                    <li class="tool-item">GitHub</li>
-                    <li class="tool-item">Google Antigravity</li>
-                </ul>
+                    <div class="skills-group">
+                        <div class="section-subtitle-icon">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <h3>Ferramentas</h3>
+                        </div>
+                        <div class="skills-cards">
+                            <div class="skill-card">
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="devicon-github-original"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <div class="skill-info">
+                                    <span>Google Antigravity</span>
+                                    <span class="skill-status">(em estudo)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projetos" class="projects-section">
-            <div class="projects-container">
-                <h2 class="section-title">Projetos</h2>
+            <div class="container">
+                <div class="section-header-flex">
+                    <div class="section-title-wrapper">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <div>
+                            <h2>Projetos</h2>
+                            <p>Aqui estão alguns dos meus projetos desenvolvidos durante meus estudos. Cada projeto
+                                representa um passo na minha evolução como desenvolvedor.</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/AndersonJr1819" class="view-all-projects">Ver todos os projetos <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
                 <div class="projects-grid">
-
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-agencyweb.jpg" alt="Prévia do projeto AgencyWeb" class="project-image">
-                        </figure>
-                        <h3 class="project-title">AgencyWeb</h3>
-                        <p class="project-description">Site institucional de uma agência fictícia, desenvolvido como
-                            projeto para praticar desenvolvimento web.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/AgencyWeb.png" alt="Screenshot do projeto AgencyWeb">
+                        </div>
+                        <div class="project-content">
+                            <h3>AgencyWeb</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <p>Site institucional de uma agência fictícia, com foco em layout moderno e responsivo.</p>
+                            <a href="https://andersonjr1819.github.io/AgencyWeb/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-fintech.jpg" alt="Prévia do projeto Fintech" class="project-image">
-                        </figure>
-                        <h3 class="project-title">Fintech</h3>
-                        <p class="project-description">Projeto relacionado a uma aplicação financeira.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/fintech.png" alt="Screenshot do projeto Fintech">
+                        </div>
+                        <div class="project-content">
+                            <h3>Fintech</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <p>Pagin sobre uma instituição financeira ficticia</p>
+                            <a href="https://andersonjr1819.github.io/filtec/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-senailivre.jpg" alt="Prévia do projeto SENAI Livre" class="project-image">
-                        </figure>
-                        <h3 class="project-title">SENAI Livre</h3>
-                        <p class="project-description">Projeto desenvolvido utilizando React e Axios, trabalhando com
-                            API e interface dinâmica.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/Senai-livre.png" alt="Screenshot do projeto SENAI Livre">
+                        </div>
+                        <div class="project-content">
+                            <h3>SENAI Livre</h3>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Axios</span>
+                            </div>
+                            <p>Pagina feita 100% em react e utilizando axios para o consumo da api e uma interface dinâmica.</p>
+                            <a href="https://senai-livre-git-main-andersonjr1819.vercel.app/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-ecommerce.jpg" alt="Prévia do projeto E-commerce" class="project-image">
-                        </figure>
-                        <h3 class="project-title">E-commerce</h3>
-                        <p class="project-description">Projeto de loja virtual com integração de API, incluindo consulta
-                            de CEP através da API ViaCEP.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/E-commerce.png" alt="Screenshot do projeto E-commerce">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p>Loja virtual com busca por CEP, e integração com API de CEP.</p>
+                            <a href="https://andersonjr1819.github.io/CEP/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-rickandmorty.jpg" alt="Prévia do projeto Rick and Morty"
-                                class="project-image">
-                        </figure>
-                        <h3 class="project-title">Rick and Morty</h3>
-                        <p class="project-description">Projeto utilizando a API do Rick and Morty para consumir e
-                            apresentar informações.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/Rick and mroty.png" alt="Screenshot do projeto Rick and Morty">
+                        </div>
+                        <div class="project-content">
+                            <h3>Rick and Morty</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p>Consumo da API pública de Rick and Morty com listagem de personagens e detalhes.</p>
+                            <a href="https://andersonjr1819.github.io/Rick-and-morty/#" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-akgefood.jpg" alt="Prévia do projeto AKGE Food" class="project-image">
-                        </figure>
-                        <h3 class="project-title">AKGE Food</h3>
-                        <p class="project-description">Conceito de aplicativo de delivery. A ideia inclui recursos
-                            inteligentes para auxiliar usarios incluindo uma ia feita 100% em JAVASCRIPIT 
-                            <span>Projeto escolar</span> </p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/cosmotrip.png" alt="Screenshot do projeto Cosmo Trip">
+                        </div>
+                        <div class="project-content">
+                            <h3>Cosmo Trip</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p>Projeto para praticar e aprimorar meus conhecimentos em HTML e CSS.</p>
+                            <a href="" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
-                    <article class="project-article">
-                        <figure class="project-figure">
-                            <img src="projeto-aagoficina.jpg" alt="Prévia do projeto AAG Oficina" class="project-image">
-                        </figure>
-                        <h3 class="project-title">AAG Oficina</h3>
-                        <p class="project-description">Uma pagina web focada em uma oficina movel feita em HTML CSS E JAVASCRIPT
-                            <span>Projeto escolar</span>.</p>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/AKGE-FOOD.png" alt="Screenshot do projeto AKGE Food">
+                        </div>
+                        <div class="project-content">
+                            <h3>AKGE Food</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p>Aplicativo de delivery com foco em praticidade e inteligência. Estrutura para futuro
+                                assistente de IA.</p>
+                            <a href="https://akge-delivery-git-main-andersonjr1819.vercel.app/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </article>
 
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/AAG.png" alt="Screenshot do projeto AAG Oficina">
+                        </div>
+                        <div class="project-content">
+                            <h3>AAG Oficina</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <p>Site de oficina mecânica móvel, incluindo serviços, promoções e cadastro do veículo.</p>
+                            <a href="https://aag-ofinas-git-main-andersonjr1819.vercel.app/" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="estudos" class="studies-section">
-            <div class="studies-container">
-                <h2 class="section-title">Estudos e Formação</h2>
-                <div class="studies-content">
-                    <div class="studies-block">
-                        <h3 class="studies-subtitle">Formação Acadêmica</h3>
-                        <p>Ensino Médio Técnico — em andamento</p>
+        <section class="info-grid-section">
+            <div class="container info-grid-container">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Formação</h3>
                     </div>
-                    <div class="studies-block">
-                        <h3 class="studies-subtitle">Cursos e Aprendizados</h3>
-                        <ul class="studies-list">
-                            <li>Curso de 300h no IOS, envolvendo HTML, CSS, JavaScript, Git, GitHub e trabalho em equipe
-                            </li>
-                            <li>Estudos relacionados a React através do SENAI</li>
-                            <li>Estudos relacionados a aplicações com IA</li>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Ensino Médio Técnico <span class="badge">(3º ano)</span></h4>
+                            <p>Em andamento</p>
+                        </div>
+                    </div>
+
+                    <div class="certifications-block">
+                        <h4>Cursos e Certificações</h4>
+                        <ul>
+                            <li>iOS – 300h (HTML, CSS, JavaScript, Git/GitHub, trabalho em equipe)</li>
+                            <img src="assets/img/certificado ios.png" alt="certificado ios">
+                            <li>SENAI-Suiço brasileiro Front-end (HTML, CSS, JavaScript, Git/Github, React)
+                            <img src="assets/img/Certificado_Desenvolvedor Front-end.pdf" alt="certificado front end">
+                            <li>Senai-Suiço Brasileiro aplicações utilizando ia generativa com google antigravity </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="github" class="github-section">
-            <div class="github-container">
-                <h2 class="section-title">GitHub</h2>
-                <div class="github-graph-placeholder">
-                    <p>Gráfico de contribuições do GitHub (espaço reservado)</p>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h3>Meus Estudos</h3>
+                    </div>
+                    <ul class="studies-list">
+                        <li><i class="fa-solid fa-check"></i> HTML e CSS <span class="study-desc">(aprimonrando css)</span></li>
+                        <li><i class="fa-solid fa-check"></i> JavaScript <span class="study-desc">(em
+                                desenvolvimento)</span></li>
+                        <li><i class="fa-solid fa-check"></i> React <span class="study-desc">(praticando)</span></li>
+                        <li><i class="fa-solid fa-check"></i> Git e GitHub <span class="study-desc">(em evolução)</span>
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> IA generativa e Google Antigravity</li>
+                    </ul>
+                    <div class="quote-box">
+                        <blockquote>
+                            "Todo grande resultado começa com um pequeno esforço diário."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div id="sobre" class="info-card">
+                    <div class="info-card-header">
+                        <i class="fa-solid fa-user"></i>
+                        <h3>Sobre mim</h3>
+                    </div>
+                    <p class="about-text">Durante um tempo eu não fazia ideia de qual profissão queria seguir
+                        ate fazer meu primeiro curso de front end e me interresar pela area ate chegar onde estou hoje 
+                        e busco evoluir cada vez mais na area.</p>
+
+                    <div class="about-tags-grid">
+                        <div class="about-tag-item">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Curioso</span>
+                        </div>
+                        <div class="about-tag-item">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Focado</span>
+                        </div>
+                        <div class="about-tag-item">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Determinado</span>
+                        </div>
+                        <div class="about-tag-item">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Em constante evolução</span>
+                        </div>
+                    </div>
+
+                    <div id="contato" class="about-cta">
+                        <a href="mailto:andersonfdsjunior06@gmail.com" class="btn-contact">Entrar em contato <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="contato" class="contact-section">
-            <div class="contact-container">
-                <h2 class="section-title">Contato</h2>
-                <p class="contact-text">Você pode me encontrar através dos links abaixo:</p>
-                <address class="contact-address">
-                    <ul class="contact-list">
-                        <li><a href="https://github.com/AndersonJr1819" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/anderson-ferreira-940ab43b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://www.linkedin.com/in/anderson-ferreira-940ab43b9/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    </ul>
-                </address>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container footer-container">
+            <p>Anderson Ferreira</p>
             <nav class="footer-nav">
-                <ul class="footer-nav-list">
+                <ul>
                     <li><a href="inicio">Início</a></li>
                     <li><a href="projetos">Projetos</a></li>
+                    <li><a href="sobre">Sobre</a></li>
                     <li><a href="contato">Contato</a></li>
                 </ul>
             </nav>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/anderson_junior1617/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/anderson-ferreira-940ab43b9/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AndersonJr1819" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026. Todos os direitos reservados.</p>
         </div>
     </footer>
 
