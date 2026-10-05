@@ -1,0 +1,75 @@
+@import url(../../App.css);
+
+header {
+  width: 100%;
+  background-color: var(background-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var( font-size);
+  font-weight: var(font-weight);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--text-color);
+}
+
+nav a:last-child {
+  background-color: var(--primary);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:last-child:hover {
+  background-color: var(--primary-hover);
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 12px 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav img {
+    height: 28px;
+  } 
+
+  nav a {
+    font-size: 14px;
+    margin: 4px 8px;
+  }
+
+  nav a:last-child {
+    margin-left: 0;
+    text-align: center;
+    padding: 8px 16px;
+  }
+}
