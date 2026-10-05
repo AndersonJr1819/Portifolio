@@ -1,0 +1,220 @@
+@import url(../../App.css);
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: calc(100vh - 80px);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgb(var(--color-border));
+    padding: 6px 12px;
+    border-radius: var(--radius-small);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(var(--color-primary));
+    margin-bottom: 24px;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(var(--color-primary));
+    border-radius: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(var(--color-text));
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.hero-content h1 span {
+    color: rgb(var(--color-primary));
+    display: block;
+    margin-top: 8px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: rgb(var(--color-text-secondary));
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.btn-primary {
+    background-color: rgb(var(--color-accent));
+    color: rgb(var(--color-text));
+    padding: 14px 24px;
+    border-radius: var(--radius-medium);
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+.btn-secondary {
+    background-color: rgb(var(--color-surface));
+    color: rgb(var(--color-text));
+    border: 1px solid rgb(var(--color-border));
+    padding: 14px 24px;
+    border-radius: var(--radius-medium);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    border-color: rgb(var(--color-primary));
+}
+
+.hero-quick-access {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quick-access-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(var(--color-text-secondary));
+}
+
+.quick-access-links {
+    display: flex;
+    gap: 16px;
+}
+
+.quick-access-links a {
+    font-size: 14px;
+    color: rgb(var(--color-text));
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.quick-access-links a:hover {
+    color: rgb(var(--color-primary));
+}
+
+.hero-visual {
+    flex: 1;
+    max-width: 500px;
+    background-color: rgb(var(--color-surface));
+    border: 1px solid rgb(var(--color-border));
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.hero-visual:hover {
+    border-color: rgb(var(--color-primary));
+}
+
+.code-card-header {
+    background-color: rgba(15, 23, 42, 0.8);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(var(--color-border));
+}
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.file-name {
+    font-size: 12px;
+    color: rgb(var(--color-text-secondary));
+    font-family: monospace;
+}
+
+.code-card-body {
+    padding: 16px;
+}
+
+.code-card-body img {
+    width: 100%;
+    border-radius: var(--radius-small);
+}
+
+.copy-feedback {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(var(--color-primary));
+    color: #0a0e17;
+    padding: 6px 12px;
+    border-radius: var(--radius-small);
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 40px 16px;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-quick-access {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+}
